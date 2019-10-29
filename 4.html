@@ -5,8 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+    #logo{
+        font-size: 20px;
+        color:#000;
+    }
+    #logo:hover {
+        color:red;
+    }
+    #logo img {
+        width: 20px;
+        height: 20px;
+    }
+    </style>
 </head>
 <body>
-    我也是分支上得
+    <a id="logo" href="#" onmouseover="mouseOver1()" onmouseout="mouseOut1()" ><img class="preview-img" src="./wl/img/logo.png"></img><div>链接</div></a>
+    <script>
+       
+       function mouseOver1(){
+            $('.preview-img').attr("src","./wl/img/logo1.png")
+            
+        }
+        function mouseOut1(){
+        $('.preview-img').attr("src","./wl/img/logo.png");
+        
+        }
+       
+    </script>
 </body>
 </html>
